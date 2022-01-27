@@ -15,8 +15,6 @@ try:
 	conectado = True
 except:
 	print("Erro de conexão.")
-	clientSocket.close()
-
 
 if conectado:
 	matricula = input("Input matricula:").encode() 
@@ -50,4 +48,4 @@ if conectado:
 
 	print ("From Server:", notas)
 	
-	#clientSocket.close()
+clientSocket.close()
